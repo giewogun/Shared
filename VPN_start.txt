@@ -1,0 +1,10 @@
+打开vpn:
+#Connect:
+openvpn3 session-start --config profile-1603.ovpn
+#输入账号密码Enter ur id and passwd;
+
+关闭vpn(输入openvpn3 sessions-list获取当前session地址，替换掉下面的path):
+#Disconnect: enter this command 'openvpn3 sessions-list' in Terminal to get ur session address, and use the address to substitute the path below.
+
+openvpn3 session-manage --session-path /net/openvpn/v3/sessions/963ba0b0s6f96s4fb0sb610se2af0a7ac908 --disconnect
+
